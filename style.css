@@ -1,0 +1,6 @@
+@import './node_modules/select2/dist/css/select2.css';
+
+.ghost {
+  filter: grayscale(1);
+  opacity: 0.5;
+}

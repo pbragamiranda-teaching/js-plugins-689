@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="#" />
+    <title>JavaScript Plugins</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+
+
+      <div data-controller="disable-button">
+
+        <button id="clickme"
+                data-disable-button-target="button"
+                data-action="click->disable-button#disable"
+                class="btn btn-primary btn-lg">Click me!</button>
+
+        <button id="clickme"
+                data-disable-button-target="revert"
+                data-action="click->disable-button#enable"
+                style="display:none"
+                class="btn btn-infor">Revert</button>
+
+      </div>
+
+
+      <div class="container text-center">
+
+
+        <select class="dropdown-menu" name="state">
+          <option value="AL">Alabama</option>
+          <option value="GE">Georgia</option>
+          <option value="TN">Tenneessee</option>
+          <option value="WY">Wyoming</option>
+        </select>
+
+
+        <form class="form-inline" id="search-form">
+          <input type="text" class="form-control" placeholder="Find movie" id="search-input">
+          <input type="submit" class="btn btn-primary">
+        </form>
+        <ul id="results" class="list-inline"></ul>
+
+      </div>
+
+    <!-- <script src="src/movie.js"></script> -->
+    <script src="main.js"></script>
+  </body>
+</html>
